@@ -1,0 +1,83 @@
+Unit tests test single functions and modules for expected behaviour
+
+(Integration Testing, UI Testing Are other testing approaches but not covered here)
+
+Before testing we need to decide on...
+
+-   Testing Framework
+-   Assertion Library
+-   Helper Libraries
+-   What environment we will run tests in
+-   Where to save test files
+-   When to run tests
+
+
+FRAMEWORKS
+-----------
+Mocha           -Configurable
+Jasmine         -Has built in assertion Library
+Tape            -Lean and simple
+QUnit           -
+AVA             -runs tests in parallel, speeds up approach
+Jest            -
+
+
+ASSERTION LIBRARIES
+-------------------
+These help us to define what we expect to happen.
+
+Some assertion Libraries are...
+
+Chai
+Should.js
+expect
+
+
+HELPER LIBRARIES
+-----------------
+These are tools that might help our testing
+
+For example, JSDOM simulates a browsers DOM
+Cheerio 'simulates' jQuery for the server
+
+
+WHERE TO RUN?
+-------------
+One option is to run in the browser
+    -Karma
+    -Testem
+
+Probably better to run a headless browser, to save on the time needed to run in browser
+    -PhantomJS  
+
+Or we can use an In-memory DOM (fast and quick)
+    -JSDOM
+
+
+WHERE TO SAVE TESTS?
+--------------------
+2 Main schools of thoughs
+
+-Centralised TEST folder
+    -keeps src folder tidier
+    -Keeps them separate for production deployment
+    
+-Alongside 
+    -easy imports (same folders)
+    -clear visibility
+    -convient to open
+    -no recreating folder structure
+    -easy to move files
+
+Generally also name tests 
+
+    xxx.test.js 
+Or
+    xxx.spec.js
+
+
+WHEN SHOULD WE RUN TESTS?
+---------------------------
+Unit tests should be run whenever we hit 'Save'
+
+

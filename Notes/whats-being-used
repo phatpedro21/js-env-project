@@ -1,0 +1,28 @@
+
+WEB SERVER
+----------
+built in node server (for development)
+
+TRANSPILER
+----------
+Babel
+
+BUNDLER
+-------
+Webpack
+
+LINTER
+-------
+eslint
+
+TESTING
+-------
+Mocha
+Chai
+JSDOM
+
+
+CONTINUOUS INTEGRATION
+-----------------------
+Travis (for linux testing)
+Appveryor (for windows)

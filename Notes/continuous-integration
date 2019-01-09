@@ -1,0 +1,28 @@
+When a team member commits code, it is important that the code works! and not just on the comitees machine.
+
+We can set up continuous integration to log and monitor code changes.
+
+A CI (continuous integration) server helps catch 'issues' quickly
+
+What does a CI Server do?
+
+    -Runs an automated build when code is commited
+    -Can report Who broke the code, and when
+    -Runs test suite (incase you forgot)
+    -Can check code coverage
+    -Can also automate deployment
+
+
+Examples of CI Servers
+
+-Travis:        Linux based CI server
+-Appveyor       Windows based CI server
+-Jenkins
+-CircleCI
+-semaphore
+-SnapCI
+
+
+We are going to set up Travis AND Appveyor to test builds on both linux and windows, which is always a good idea
+to ensure issues don't arise when working cross platform.
+

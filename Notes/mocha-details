@@ -1,0 +1,12 @@
+When calling mocha, we need to define a reporter, which will determine how results are displayed
+    -There are many different reporters to use, but progress is reccomended
+
+then give it a setup script (like out testSetup.js) to run before testing
+
+and finally tell it what files to look for (in regex form)
+
+
+
+As mocha does not come with an assertion library, we need to include one in our tests.
+
+In these examples will be using chai's expect style
